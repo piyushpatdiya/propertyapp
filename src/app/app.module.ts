@@ -2,7 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { allPages } from '../pages/common/declerations';
-import { Flashlight } from '@ionic-native/flashlight';
 
 
 var APP_Pages = [];
@@ -33,8 +32,7 @@ var APP_Pages = [];
     MyApp,
     APP_Pages
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},
-  Flashlight
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}
   
   ]
 })

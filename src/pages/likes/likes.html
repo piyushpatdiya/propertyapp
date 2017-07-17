@@ -24,9 +24,10 @@
         <ion-icon name="md-star-half"></ion-icon>
         <p color="dark">4.6</p>
       </div>
-      <p class="info">Paradeplein, 2018 Antwerp, Belgium</p>
+      <p>{{item.address}}</p>
+      <p class="price" color="darken"> <span color="primary" class="bold">&#x20A8; {{item.price}}</span></p>
       <ion-thumbnail no-margin item-right>
-        <img src="{{item.img}}" />
+        <img src="{{item.img}}">
       </ion-thumbnail>
     </ion-item>
 
