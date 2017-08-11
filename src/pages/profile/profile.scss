@@ -6,7 +6,7 @@ page-profile {
     }
 
     .app-content .content-bg {
-     background-color: black; 
+     background-color: color($colors , tback);
      }
 // item classes
 //----------------------------
@@ -24,20 +24,20 @@ page-profile {
             border-bottom: none !important;
         }
         .label-md{
-            color: #757575 !important;
+            color: color($colors,graytext) !important;
             font-size: 1.5rem;
             font-weight: normal;
         }
         input::-webkit-input-placeholder {
-            color: color($colors , dark);
+            color: color($colors , darken);
         }
         input:-moz-placeholder {
-            color: color($colors , dark);
+            color: color($colors , darken);
         }
         .text-input-md{
             font-weight: normal;
             font-size: 1.44rem;
-            color: color($colors , dark);
+            color: color($colors , darken);
         }
     } 
     .name-user{

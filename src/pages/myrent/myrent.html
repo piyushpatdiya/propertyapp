@@ -24,15 +24,15 @@
         <p color="dark">4.6</p>
       </div>
       <p>{{item.address}}</p>
-      <p class="price" color="darken"> <span color="primary" class="bold">&#x20A8; {{item.price}}</span></p>
+      <p class="price" color="darken"><span color="primary" class="bold">Rs.</span> <span color="primary" class="bold" style="text-decoration:line-through">{{item.pricemarket}}</span>  <span color="primary" class="bold">{{item.price}}</span></p>
       <ion-thumbnail no-margin item-right>
         <img src="{{item.img}}">
       </ion-thumbnail>
      </ion-item>
 
     <ion-item class="more-det" no-margin>
-      <button ion-button color="secondary" [navPush]="details" no-margin>FOR RENT $3,100</button>
-      <ion-icon name="ios-home" item-right></ion-icon>
+    <!--  <button ion-button color="secondary" [navPush]="details" no-margin>FOR RENT $3,100</button>
+      <ion-icon name="ios-home" item-right></ion-icon>-->
 
       <ion-fab right bottom>
         <button (click)="removeItem(item)" color="lightprimary" ion-fab mini><ion-icon name="md-trash"></ion-icon></button>

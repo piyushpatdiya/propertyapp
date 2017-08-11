@@ -4,6 +4,12 @@ page-about{
         overflow-y: scroll;
         
     }
+    .profile-img {
+        width:auto;
+        height:auto;
+        float:left;
+        margin-top:0px;
+    }
 }
 
 .app-content{
@@ -12,8 +18,8 @@ page-about{
     }
     .content-bg{
         /*background-color: color($colors , light);*/
-        background-color: black; /* pm */
-        color:white;
+        background-color: color($colors, tback);
+        color:color($colors,darken);
         p{
             margin: 0 0 18px 0;
         }

@@ -5,26 +5,27 @@
 
 
 <ion-content #contentRef (ionScroll)="scrollingFun($event)">
-  <div class="det-head">
-    <div class="user-action">
+  <div class="det-head1">
+    <!--<div class="user-action">
       <ion-icon name="md-heart" (click)="ActiveLike()" [ngClass]="{'activeColor':like}"></ion-icon>
       <ion-icon name="md-share" (click)="presentShare()"></ion-icon>
-    </div>
-<ion-slides pager style="max-height:400px">
+    </div>-->
+<ion-slides pager>
   <ion-slide>
-                  <ion-img src="assets/img/p6.jpg"></ion-img>
+                  <ion-img src="assets/img/slide1.jpg"></ion-img>
   </ion-slide>
   <ion-slide>
-                  <ion-img src="assets/img/p7.jpg"></ion-img>
+                  <ion-img src="assets/img/slide2.jpg"></ion-img>
   </ion-slide>
   <ion-slide>
-                  <ion-img src="assets/img/p8.jpeg"></ion-img>
+                  <ion-img src="assets/img/slide3.jpg"></ion-img>
   </ion-slide>
 </ion-slides>
-    <ion-grid class="det-info" padding>
+
+    <ion-grid class="det-info3" padding>
       <ion-row>
-        <ion-col col-8 style="border-right:1px solid white">
-          <h3 color="dark" no-margin>Siddhesh Optimus (3BHK Residential Apartment)</h3>
+        <ion-col col-12>
+          <h3 color="darken" no-margin>Siddhesh Optimus (3BHK Residential Apartment)</h3>
           <div class="stars">
             <ion-icon name="md-star"></ion-icon>
             <ion-icon name="md-star"></ion-icon>
@@ -33,38 +34,43 @@
             <ion-icon name="md-star-half"></ion-icon>
             <p color="light">4.6</p>
           </div>
-          <p color="graylight" no-margin>Viman nagar , Pune</p>
-          <ion-grid class="grid-info" no-padding>
-            <ion-row>
-              <ion-col text-center col-4>
-                <img src="assets/img/bedroom.png" />
-                <p color="graylight" no-margin>3 bedroom</p>
-              </ion-col>
-              <ion-col text-center color="light" col-4>
-                <img src="assets/img/baths.png" />
-                <p color="graylight" no-margin>3 baths</p>
-              </ion-col>
-              <ion-col text-center color="light" col-4>
-                <img src="assets/img/sq.png" />
-                <p color="graylight" no-margin>1355-1685 Sq.Ft.</p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+          <p color="darken" no-margin>Viman nagar , Pune</p>      
         </ion-col>
-        <ion-col col-4>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
           <div class="rent-info" text-center>
-            <h3 color="light" no-margin>FOR SALE:</h3>
-            <h3 color="primary" class="bold" no-margin>&#x20A8; 98.9Lac - 1.2 Cr</h3>
+            <p color="light" no-margin>FOR SALE:</p>
+            <h4 color="primary" class="bold" no-margin>&#x20A8; <span style="text-decoration:line-through">1 Crore</span> 90 Lac  <ion-badge color="danger">10 % Discount</ion-badge> </h4>
+            <p color="light" no-margin>RENT:</p>
+            <h4 color="primary" class="bold" no-margin>&#x20A8; 2 Lac <ion-badge color="primary">2 % Rental ROI<sup>*</sup></ion-badge> </h4>
+
           </div>
         </ion-col>
       </ion-row>
-      <button class="scroll-btn" (click)="goto();"><ion-icon name="ios-arrow-down" color="light"></ion-icon></button>
+      <!--<button class="scroll-btn" (click)="goto();"><ion-icon name="ios-arrow-down" color="light"></ion-icon></button>-->
       
     </ion-grid>
+        <ion-grid class="grid-info" no-padding>
+            <ion-row class="grid-feature">
+              <ion-col text-center col-4>
+                <img src="assets/img/bedroom.png" />
+                <p color="darken" no-margin>3 bedroom</p>
+              </ion-col>
+              <ion-col text-center color="light" col-4>
+                <img src="assets/img/baths.png" />
+                <p color="darken" no-margin>3 baths</p>
+              </ion-col>
+              <ion-col text-center color="light" col-4>
+                <img src="assets/img/sq.png" />
+                <p color="darken" no-margin>1355-1685 Sq.Ft.</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
   </div>
 
 
-  <div class="more-details" padding>
+  <div class="more-details1" padding>
 
     <ion-card text-left>
   <!--           section of Head          -->
@@ -86,7 +92,7 @@
 
 <!--           section of Description          -->
         <ion-card-content>     
-          <h3 color="dark">Description</h3>
+          <h3 color="darken">Description</h3>
           <p color="graytext">Spectacular gated custom-built, with private front and rear 
           entrances, 4-bedroom/3 1/2-bath (all single story with the 
           exception of a remote oversized bedroom/office and 
@@ -96,9 +102,9 @@
           distance of Ladera Shopping Center, minutes from both 
           the 405 and 10 freeways, LAX, Downtown Los Angeles. </p>
         </ion-card-content>
-
+<ion-badge color="primary">Note: Rental ROI is calculated based on offered value</ion-badge>
 <!--           section of Details          -->
-        <ion-card-content>        
+       <!-- <ion-card-content>        
           <aside>
             <ion-grid class="grid-info" no-margin no-padding>
               <ion-row>
@@ -120,7 +126,7 @@
               </ion-row>
             </ion-grid>
           </aside>
-        </ion-card-content>
+        </ion-card-content>-->
 
 <!--           section of Images          -->
      <!-- <ion-card-content>       
@@ -157,13 +163,13 @@
   <ion-grid no-padding>
     <ion-row text-center>
       <ion-col col-4>
-        <ion-icon name="md-call" color="light"></ion-icon>
+        <ion-icon name="md-call" color="tback"></ion-icon>
       </ion-col>
       <ion-col col-4 class="min-btn">
-        <ion-icon name="md-mail" color="light"></ion-icon>
+        <ion-icon name="md-mail" color="tback"></ion-icon>
       </ion-col>
       <ion-col col-4>
-        <p [navPush]="rentPage" color="light" no-margin>RENT</p>
+        <p [navPush]="rentPage" color="tback" no-margin>RENT</p>
       </ion-col>
     </ion-row>
   </ion-grid>

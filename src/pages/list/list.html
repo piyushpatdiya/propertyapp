@@ -25,12 +25,20 @@
         <p color="dark">4.6</p>
       </div>
       <p>{{item.address}}</p>
-      <p class="price" color="darken"> <span color="primary" class="bold">&#x20A8; {{item.price}}</span></p>
-      <ion-thumbnail no-margin item-right>
+      <p class="price" color="darken"><span color="primary" class="bold">Rs.</span> <span color="primary" class="bold" style="text-decoration:line-through">{{item.pricemarket}}</span>  <span color="primary" class="bold">{{item.price}}</span> <ion-badge color="darken">Rent {{item.rent}}</ion-badge></p>
+      <div style="clear:both;left:0">
+        
         <img src="{{item.img}}">
-      </ion-thumbnail>
+       <div style="float:right;position:relative;top:-30px; right:-5px;">
+         <ion-badge color="danger">{{item.discount}} % Discount</ion-badge>
+         <ion-badge color="primary">{{item.rentroi}} % Rental ROI<sup>*</sup></ion-badge>
+       </div>
+       </div>
+      
     </ion-item>
+    
   </ion-list>
+   <ion-badge color="primary">Note: Rental ROI is calculated based on offered value</ion-badge>
 
 <ion-fab (click)="presentFilterModal()" right bottom>
   <button ion-fab mini><ion-icon name="ios-funnel"></ion-icon></button>

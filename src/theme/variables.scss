@@ -49,7 +49,8 @@ $colors: (
   graytext:     #757575,
   graylight:    #bdbdbd,
   dark:         #ECEAE2,   // #212121,
-  darken:       #000
+  darken:       #000,
+  tback:         white  
 );
 
 
@@ -63,7 +64,7 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-$background-color: color($colors , darken);
+$background-color: color($colors , tback);
 
 $button-md-height: 3.4rem;
 $button-md-text-transform: capitalize;
@@ -97,6 +98,8 @@ $item-md-thumbnail-size: 110px;
 $datetime-md-placeholder-color: #000;
 
 $range-md-slider-height: 400px;
+
+
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

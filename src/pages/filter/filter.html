@@ -3,6 +3,35 @@
 
   <ion-list class="filter-modal">
 
+<ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <h4 text-capitalize no-margin>Discount %</h4>
+          <ion-item color="none" no-padding>
+            <ion-select>
+              <ion-option value="Min" [selected]="true">%</ion-option>
+              <ion-option value="10">10</ion-option>
+              <ion-option value="20">20</ion-option>
+              <ion-option value="25">25</ion-option>
+              <ion-option value="30">30</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col col-6>
+          <h4 text-capitalize no-margin>Rent ROI %</h4>
+          <ion-item color="none" no-padding>
+            <ion-select>
+              <ion-option value="Max" [selected]="true">%</ion-option>
+              <ion-option value="1">1</ion-option>
+              <ion-option value="2">2</ion-option>
+              <ion-option value="3">3</ion-option>
+              <ion-option value="4">4</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
     <h4 text-capitalize no-margin>price</h4>
     <ion-grid>
       <ion-row>

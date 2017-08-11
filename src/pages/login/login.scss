@@ -12,17 +12,23 @@
         align-items: center;
         justify-content: center;
     }
+
+}
+page-login {
 .toolbar-md-primary .toolbar-background-md {
-    background: #ffffff;
+    background: white;
 }
 
 }
-
     .img-login{
-    width: 20%;
-    height: auto;
-    margin-left:40%;
-    margin-top:20px;
+   position:absolute;
+    left: 0;
+    right: 0;
+    width:50%;
+    margin:0 auto;
+    top:50%;
+    transform:translateY(-50%);
+    
 /*    text-align:center;*/
     
 /*    left:33%;
@@ -89,14 +95,14 @@
     .text-input-md{
         margin-bottom: 0px;
         margin-left: 0px;
-        color: grey;
+        color: color($colors , darken);
     }
     input::-webkit-input-placeholder {
-        color: rgba(255,255,255,.7);
+        color: color($colors , graytext);
         font-size: 1.4rem;
     }
     input:-moz-placeholder {
-        color: rgba(255,255,255,.7);
+        color: color($colors , graytext);
         font-size: 1.4rem;
     }
     .button-md{

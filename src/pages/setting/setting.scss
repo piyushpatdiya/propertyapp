@@ -3,7 +3,7 @@ page-setting{
         .content-bg{
             height: 100%;
             overflow-y: scroll;
-            background-color: black; /*pm*/
+            background-color: color($colors , tback);
         }
     }
 }
@@ -11,7 +11,7 @@ page-setting{
 .setting-list{
     .list-header-md{
         border-top: 0px;
-        border-bottom: 1px solid color($colors , graytext);
+        border-bottom: 1px solid color($colors , darken);
         .label-md{
             margin-bottom: 5px;
             font-weight: 500;
@@ -19,7 +19,7 @@ page-setting{
         }
     }
     .label-md{
-        color: color($colors , dark);
+        color: color($colors , darken);
         font-size: 1.4rem;
     }
     .checkbox-md{

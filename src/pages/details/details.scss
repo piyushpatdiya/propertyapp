@@ -2,18 +2,19 @@
 // --------------------------------------------------
 page-details {
     .toolbar-background-md{
-        opacity: .3;
+        /*opacity: .3;
         background-blend-mode: luminosity;
         transition: all .4s linear;
-        -webkit-transition: all .4s linear;
+        -webkit-transition: all .4s linear;*/
     }
     .bar-button-default-md{
         /*color: color($colors, darken);
         background-color: color($colors,primary);*/
     }
     .content-md{
-        background: url(../assets/img/det-bg.png);
-        @extend %cover;
+        /*background: url(../assets/img/det-bg.png);*/
+        background-color: color($colors , tback);
+        /*@extend %cover;*/
     }
     .stars{
         p{
@@ -24,7 +25,7 @@ page-details {
         box-shadow: none;
     }
     .card-content-md{
-        border-bottom: 1px solid #bdbdbd;
+        border-bottom: 1px solid color($colors, darken);
         &:last-child{
             border-bottom: none;
         }
@@ -36,11 +37,22 @@ page-details {
             }
         }
     }
+
+
     ion-img {
-	    width:90%;
-	    height:300px;
-	    background: transparent;
+	  display: inline-block;
+    min-width: 250px;
+    min-height: 250px;
+       background-color:color($colors,tback);
     }
+
+    ion-slides {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 40px;        
+    }
+
     .swiper-slide img
     {
 	    width:auto;
@@ -51,6 +63,12 @@ page-details {
         background: color($colors, primary);*/
         opacity: 0.9;
     }
+
+    .grid-feature
+    {
+        border-bottom:1px solid color($colors,primary);
+        border-top:1px solid color($colors,primary);
+    }
 }
 
 .colorOfHeader{
@@ -58,15 +76,15 @@ page-details {
         display: none;
     }
     .toolbar-background-md{
-        opacity: 1 !important;
+       /* opacity: 1 !important;
         background-blend-mode: normal !important;
-        background: color($colors , dark) !important;
+        background: color($colors , dark) !important;*/
     }
 }
 
 .activeColor{
     color: color($colors , secondary) !important;
-    background-color: color($colors , light) !important;
+    background-color: color($colors , darken) !important;
 }
 
 // Head Of Details
@@ -77,10 +95,12 @@ page-details {
     h3{
         font-weight: 400;
         font-size: 1.8rem;
+        color: color($colors, darken);
     }
     p{
-        @extend %overflow;
+        /*@extend %overflow;*/
         font-size: 1.2rem;
+        color: color($colors, darken);
     }
 }
 
@@ -105,8 +125,8 @@ page-details {
 .det-info{
     position: absolute;
     bottom: 0;
-    background: -webkit-linear-gradient(top, rgba(33,33,33,0) 0%,rgba(33,33,33,1) 58%,rgba(33,33,33,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(33,33,33,0) 0%,rgba(33,33,33,0.98) 58%,rgba(33,33,33,0.98) 100%);
+   /* background: -webkit-linear-gradient(top, rgba(33,33,33,0) 0%,rgba(33,33,33,1) 58%,rgba(33,33,33,1) 100%); /* Chrome10-25,Safari5.1-6 */
+   /* background: linear-gradient(to bottom, rgba(33,33,33,0) 0%,rgba(33,33,33,0.98) 58%,rgba(33,33,33,0.98) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ed000000',GradientType=0 ); /* IE6-9 */
     .rent-info{
         margin-top: 50px;
@@ -134,7 +154,7 @@ page-details {
 // More Of Details
 // --------------------------------------------------
 .more-details{
-    background: color($colors, none);
+    background: color($colors, tback);
     .card-title-md{
         font-size: 2.1rem;
     }
@@ -193,7 +213,7 @@ page-details {
         }
     }
     .min-btn{
-        border-right: 1px solid color($colors , dark);
-        border-left: 1px solid color($colors , dark);
+        border-right: 1px solid color($colors , darken);
+        border-left: 1px solid color($colors , darken);
     }
 }
